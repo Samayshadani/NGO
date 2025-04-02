@@ -13,7 +13,7 @@ const Home = () => {
 
   const fetchHomePosts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/posts");
+      const response = await axios.get("https://admin-1-49ek.onrender.com/posts");
       const filteredPosts = response.data.filter(post => post.category === "home");
       setHomePosts(filteredPosts);
       setLoading(false);
@@ -32,7 +32,7 @@ const Home = () => {
       <div className="image-grid">
         {loading ? <p>Loading...</p> : error ? <p>{error}</p> : homePosts.map((post) => (
           <div key={post._id} className="image-card">
-            <img src={`http://localhost:5000${post.image}`} alt={post.title} />
+            <img src={`https://admin-1-49ek.onrender.com${post.image}`} alt={post.title} />
             <p>{post.content}</p>
             <strong><p>{new Date(post.date).toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" })}</p></strong>
 

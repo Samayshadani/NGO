@@ -34,7 +34,7 @@ const Volunteer = () => {
     data.append("resume", formData.resume);
 
     try {
-      await axios.post("http://localhost:5000/api/volunteers/apply", data);
+      await axios.post("https://admin-1-49ek.onrender.com/api/volunteers/apply", data);
       alert("Application submitted successfully!");
       setFormData({
         fullName: "",

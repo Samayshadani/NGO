@@ -14,7 +14,7 @@ const Events = () => {
 
   const fetchEvents = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/posts");
+      const response = await axios.get("https://admin-1-49ek.onrender.com/posts");
       setPastEvents(response.data.filter(post => post.category === "past-event"));
       setUpcomingEvents(response.data.filter(post => post.category === "upcoming-event"));
       setLoading(false);
@@ -31,7 +31,7 @@ const Events = () => {
         <div className="events-grid">
           {loading ? <p>Loading...</p> : error ? <p>{error}</p> : upcomingEvents.map((post) => (
             <div key={post._id} className="event-card">
-              <img src={`http://localhost:5000${post.image}`} alt={post.title} />
+              <img src={`https://admin-1-49ek.onrender.com${post.image}`} alt={post.title} />
               <p>{post.content}</p>
               <strong><p>{new Date(post.date).toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" })}</p></strong>
 
@@ -45,7 +45,7 @@ const Events = () => {
         <div className="events-grid">
           {loading ? <p>Loading...</p> : error ? <p>{error}</p> : pastEvents.map((post) => (
             <div key={post._id} className="event-card">
-              <img src={`http://localhost:5000${post.image}`} alt={post.title} />
+              <img src={`https://admin-1-49ek.onrender.com${post.image}`} alt={post.title} />
               <p>{post.content}</p>
               <strong><p>{new Date(post.date).toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" })}</p></strong>
 

@@ -15,7 +15,7 @@ const ViewPosts = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/posts');
+      const response = await axios.get('https://admin-1-49ek.onrender.com/posts');
       setPosts(response.data);
       setLoading(false);
     } catch (err) {
@@ -83,7 +83,7 @@ const ViewPosts = () => {
                       <td className="post-image">
                         {post.image ? (
                           <img 
-                            src={`http://localhost:5000${post.image}`}
+                            src={`https://admin-1-49ek.onrender.com${post.image}`}
                             alt={post.title}
                           />
                         ) : (

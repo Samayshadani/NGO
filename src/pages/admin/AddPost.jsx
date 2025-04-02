@@ -63,7 +63,7 @@ const AddPost = () => {
       }
 
       // Send request to backend
-      const response = await axios.post('http://localhost:5000/admin/post', formDataToSend, {
+      const response = await axios.post('https://admin-1-49ek.onrender.com/admin/post', formDataToSend, {
         headers: {
           'auth-token': token,
           'Content-Type': 'multipart/form-data'

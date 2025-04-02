@@ -12,7 +12,7 @@ const AdminVolunteers = ({ handleLogout }) => {
   }, []);
   const fetchVolunteers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/volunteers");
+      const response = await axios.get("https://admin-1-49ek.onrender.com/api/volunteers");
       // Filter out the accepted/rejected volunteers
       const filteredVolunteers = response.data.filter(
         (volunteer) => volunteer.status === "Pending"
@@ -29,7 +29,7 @@ const AdminVolunteers = ({ handleLogout }) => {
 
   const handleAccept = async (volunteerId, email) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/volunteers/decision", {
+      const response = await axios.post("https://admin-1-49ek.onrender.com/api/volunteers/decision", {
         email,
         decision: "Accepted",
       });
@@ -44,7 +44,7 @@ const AdminVolunteers = ({ handleLogout }) => {
 
   const handleReject = async (volunteerId, email) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/volunteers/decision", {
+      const response = await axios.post("https://admin-1-49ek.onrender.com/api/volunteers/decision", {
         email,
         decision: "Rejected",
       });
@@ -106,7 +106,7 @@ const AdminVolunteers = ({ handleLogout }) => {
                   <td>
                     {vol.resumePath ? (
                       <a
-                        href={`http://localhost:5000/upload/${vol.resumePath}`}
+                        href={`https://admin-1-49ek.onrender.com/upload/${vol.resumePath}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

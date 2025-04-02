@@ -23,7 +23,7 @@ const Login = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5000/admin/login', formData);
+      const response = await axios.post('https://admin-1-49ek.onrender.com/admin/login', formData);
       const { token } = response.data;
       
       // Store the token in localStorage
