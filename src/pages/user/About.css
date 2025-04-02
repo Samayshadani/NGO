@@ -1,0 +1,160 @@
+.give-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f8f8f8;
+  }
+  .feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .feedback-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feedback-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feedback-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .feedback-message {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .about-text {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .about-text h2 {
+    font-size: 2em;
+  }
+  
+  .about-text p {
+    font-size: 1.1em;
+    line-height: 1.9;
+  }
+  
+  .about-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-text li {
+    margin: 10px 0;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .founders-section {
+    padding: 40px;
+    background: #fff;
+  }
+  
+  .founders {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .founder-card {
+    text-align: center;
+    background: #f4f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+  }
+  
+  .founder-card img {
+    width: 180px;
+    height: 200px;
+  }
+  
+  .founder-card h4 {
+    margin: 15px 0 10px;
+  }
+  
+  .founder-card p {
+    font-size: 0.9em;
+  }
+  .feedback-section {
+    padding: 40px;
+    background: #f8f8f8;
+  }
+  
+  .feedback-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .feedback-form {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  .feedback-form button {
+    background: #4c6ef5;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  
+  .feedback-map {
+    width: 50%;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .feedback-list {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .feedback-item:last-child {
+    border-bottom: none;
+  } 
