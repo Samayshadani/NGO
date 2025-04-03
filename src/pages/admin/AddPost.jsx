@@ -9,6 +9,7 @@ const AddPost = () => {
     title: '',
     content: '',
     category: '',
+    date: '',
     image: null
   });
   const [error, setError] = useState('');
@@ -58,6 +59,7 @@ const AddPost = () => {
       formDataToSend.append('title', formData.title);
       formDataToSend.append('content', formData.content);
       formDataToSend.append('category', formData.category);
+      formDataToSend.append('date', formData.date);
       if (formData.image) {
         formDataToSend.append('image', formData.image);
       }
@@ -149,6 +151,18 @@ const AddPost = () => {
                 <option value="upcoming-event">Upcoming Events</option>
                 <option value="stories">Stories</option>
               </select>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="date">Date</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                required
+              />
             </div>
 
             <div className="form-group">
