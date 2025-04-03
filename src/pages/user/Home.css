@@ -3,7 +3,7 @@
     text-align: center;
   }
   
-  .mission-section {
+  .mission-section img{
     background: url('/images/background.jpg') no-repeat center center/cover;
     /* padding: 50px; */
     color: white;
